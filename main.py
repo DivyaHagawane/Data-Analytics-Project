@@ -33,7 +33,7 @@ def analyze_data():
     global df
     if df is None:
         messagebox.showerror("Error", "Load a file first!")
-        return
+       
     try:
         total_patients = df['Patient_ID'].nunique()
         total_revenue = df['Treatment_Cost_USD'].sum()
